@@ -16,7 +16,7 @@
 ############################################################################
 
 ORG_DIR=`pwd`
-DIRS=`find . -type d -name .git | awk -F".git" '{print $1}'`
+DIRS=`find . -type d -name .git | awk -F"/.git" '{print $1}'`
 for DIR in $DIRS
 do
 
